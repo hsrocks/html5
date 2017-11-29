@@ -1,16 +1,18 @@
 <html>
 <head>
-	<title>Output tag</title>
+   <title>Output tag</title>
 </head>
 <body>
-	  
+
       <form oninput = "sum.value = parseInt(num1.value)+parseInt(num2.value)+parseInt(num3.value)">
          <input type = "range" name = "num1" value = "0" min=0 /> +
          <input type = "number" name = "num2" value = "0" min=0 /> +
-         <input type = "number" name = "num3" value = "0" min=0 /><br />
+         <input type = "number" name = "num3" value = "0" min=0 /><br />      
          <label>Sum is :
-         	<output name = "sum">0</output>
+            <output name = "sum">0</output>
          </label>
       </form>
+      <p>Display a gauge:</p>  
+      <meter value="30" min="1" max="100">30 out of 100</meter><br>
 </body>
 </html>
